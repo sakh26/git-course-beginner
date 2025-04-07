@@ -41,7 +41,6 @@ export default function Home() {
       {/* Card Layout */}
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full row-start-3">
         {cardData.map((card, index) => (
-          
           <Link href={card.link} key={index}>
             <Card>
               <CardHeader>
