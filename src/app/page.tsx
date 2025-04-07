@@ -33,7 +33,7 @@ export default function Home() {
             Welcome to Git Course for Beginners!
           </h1>
           <p className="text-sm/6 font-[family-name:var(--font-geist-mono)]">
-            This is a cool thing.
+            This is a cool thing and more
           </p>
         </div>
       </main>
