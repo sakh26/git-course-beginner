@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   Card,
   CardContent,
@@ -8,8 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { cardData } from "./lessons"
-
+import { cardData } from "./lessons";
 
 export default function Home() {
   return (
@@ -41,13 +41,15 @@ export default function Home() {
       {/* Card Layout */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full row-start-3">
         {cardData.map((card, index) => (
-          <Card key={index}>
-            <CardHeader>
-              <CardTitle>{card.title}</CardTitle>
-              <CardDescription>{card.description}</CardDescription>
-            </CardHeader>
-            <CardFooter></CardFooter>
-          </Card>
+          <Link href={card.link} key={index}>
+            <Card>
+              <CardHeader>
+                <CardTitle>{card.title}</CardTitle>
+                <CardDescription>{card.description}</CardDescription>
+              </CardHeader>
+              <CardFooter></CardFooter>
+            </Card>
+          </Link>
         ))}
       </div>
     </div>
