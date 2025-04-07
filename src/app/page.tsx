@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 
 // Dummy data for the cards
 const cardData = [
@@ -38,7 +39,12 @@ const cardData = [
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
+      {/* Search Bar */}
+      <div className="row-start-1 w-full flex justify-end p-4">
+        <Input type="search" placeholder="Search lessons..." className="max-w-sm" />
+      </div>
+
       <main className="flex flex-col row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
@@ -66,8 +72,7 @@ export default function Home() {
               <CardTitle>{card.title}</CardTitle>
               <CardDescription>{card.description}</CardDescription>
             </CardHeader>
-            <CardFooter>
-            </CardFooter>
+            <CardFooter></CardFooter>
           </Card>
         ))}
       </div>
