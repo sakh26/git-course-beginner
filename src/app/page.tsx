@@ -16,7 +16,7 @@ export default function Home() {
     <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
       {/* Search Bar */}
       <div className="row-start-1 w-full flex justify-end p-4">
-        <Input type="search" placeholder="Search lessons..." className="max-w-sm" />
+        {/* <Input type="search" placeholder="Search lessons..." className="max-w-sm" /> */}
       </div>
 
       <main className="flex flex-col row-start-2 items-center sm:items-start">
