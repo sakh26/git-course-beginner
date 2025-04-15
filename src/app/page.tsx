@@ -28,6 +28,7 @@ export default function Home() {
           height={38}
           priority
         />
+        <div>Fun stuff</div>
         <div className="text-center sm:text-left">
           <h1 className="text-2xl font-bold mb-4">
             Welcome to Git Course for Beginners!
